@@ -31,3 +31,20 @@ const perimetroCirculo = (radio) => diametroCirculo(radio) * PI;
 const areaCirculo = (radio) => (radio * radio) * PI;
 
 console.groupEnd();
+
+
+// Aquí interactuamos con el HTML
+
+const calcularPerimetroCuadrado = () => {
+    const input = document.getElementById("InputCuadrado");
+    const value = input.value;
+    const perimetro = perimetroCuadrado(value);
+    alert(`El perimetro del cuadrado es: ${perimetro}`);
+}
+
+const calcularAreaCuadrado = () => {
+    const input = document.getElementById("InputCuadrado");
+    const value = input.value;
+    const area = areaCuadrado(value);
+    alert(`El área del cuadrado es: ${area}`);
+}
