@@ -48,3 +48,21 @@ const calcularAreaCuadrado = () => {
     const area = areaCuadrado(value);
     alert(`El área del cuadrado es: ${area}`);
 }
+
+const calcularPerimetroTriangulo = () => {
+    const inputTrianguloLado1 = document.getElementById("InputTrianguloLado1");
+    const inputTrianguloLado2 = document.getElementById("InputTrianguloLado2");
+    const inputTrianguloBase = document.getElementById("InputTrianguloBase");
+    const lado1 = parseInt(inputTrianguloLado1.value);
+    const lado2 = parseInt(inputTrianguloLado2.value);
+    const base = parseInt(inputTrianguloBase.value);
+    const perimetro = perimetroTriangulo(lado1, lado2, base);
+    alert(`El perimetro del triangulo es: ${perimetro}`);
+}
+
+const calcularAreaTriangulo = () => {
+    const InputTrianguloBase = document.getElementById("InputTrianguloBase");
+    const InputTrianguloAltura = document.getElementById("InputTrianguloAltura");
+    const area = areaTriangulo(InputTrianguloBase.value, InputTrianguloAltura.value);
+    alert(`El área del cuadrado es: ${area}`);
+}
