@@ -5,29 +5,39 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Figuras geométricas | Curso Práctico de JavaScript</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mukta:wght@200;300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style/figuras.css">
 </head>
 <body>
     <header>
-        <h1>
-            Figuras geométricas
-        </h1>
-        <p>Este es el primer taller del curso práctico de JavaScript</p>
+        <div class="image">
+            <img class="icon" src="data:image/svg+xml;base64,PHN2ZyBpZD0iQ2FwYV8xIiBlbmFibGUtYmFja2dyb3VuZD0ibmV3IDAgMCA1MTIgNTEyIiBoZWlnaHQ9IjUxMiIgdmlld0JveD0iMCAwIDUxMiA1MTIiIHdpZHRoPSI1MTIiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGc+PHBhdGggZD0ibTUyLjIzNyAxMjMuMzQyLTE3LjkzNSA0LjY1OHYyNTZsMjIxLjY5OCAxMjggMjIxLjY5OC0xMjh2LTI1NmwtMTcuOTM1LTQuNjU4eiIgZmlsbD0iIzAwYjNmZSIvPjxwYXRoIGQ9Im0yNTYgMTIzLjM0MnYzODguNjU4bDIyMS42OTgtMTI4di0yNTZsLTE3LjkzNS00LjY1OHoiIGZpbGw9IiMwMjc0ZjkiLz48cGF0aCBkPSJtNDIwLjY5OCAxMjgtMTY0LjY5OCAxMjcuOTUxLTIyMS42OTgtMTI3Ljk0MXYtLjAxbDIyMS42OTgtMTI4eiIgZmlsbD0iIzAxZjVmZiIvPjxwYXRoIGQ9Im00NzcuNjk4IDEyOHYuMDFsLTIyMS42OTggMTI3Ljk0MXYtMjU1Ljk1MXoiIGZpbGw9IiMwMGIzZmUiLz48L2c+PC9zdmc+" />
+        </div>
+        <div class="content">
+            <h1>Figuras geométricas</h1>
+        </div>
     </header>
-    <section>
-        <h2>Calcula el área y perímetro de un cuadrado</h2>
+    <section class="figuras">
+        <p>Este es el primer taller del curso práctico de JavaScript</p>
         <form>
+            <h2>Calcula el área y perímetro de un cuadrado</h2>
             <label for="InputCuadrado">
                 Escribe cuánto mide cada lado de tu cuadrado:
             </label>
-            <input id="InputCuadrado" type="number" />
-            <button type="button" onclick="calcularPerimetroCuadrado()">
+            <input id="InputCuadrado" class="input" type="number" placeholder="Lado del cuadrado" required />
+            <button type="button" class="button" onclick="calcularPerimetroCuadrado()">
                 Calcular el perímetro
             </button>
-            <button type="button" onclick="calcularAreaCuadrado()">
+            <button type="button" class="button" onclick="calcularAreaCuadrado()">
                 Calcular el área
             </button>
         </form>
     </section>
+    <footer>
+        <p>Alejo688 | Platzi - Curso Práctico de JavaScript</p>
+    </footer>
     <script src="./figuras.js"></script>
 </body>
 </html>
