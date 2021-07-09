@@ -59,6 +59,10 @@ header .content {
     border-radius: 5px;
 }
 
+.button:hover {
+    background: #00b4d8;
+}
+
 footer {
     background-color: #00b4d8;
     display: flex;
