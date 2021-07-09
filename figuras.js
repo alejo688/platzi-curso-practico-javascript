@@ -33,6 +33,15 @@ const areaCirculo = (radio) => (radio * radio) * PI;
 console.groupEnd();
 
 
+// Código del triángulo isósceles
+console.group("Triángulo isósceles");
+
+const alturaTrianguloIsosceles = (lado, base) =>  Math.sqrt(Math.pow(lado, 2)-Math.pow((base/2), 2),2);
+
+console.log(alturaTrianguloIsosceles(10, 4));
+
+console.groupEnd();
+
 // Aquí interactuamos con el HTML
 
 // Funciones calculo cuadrado
