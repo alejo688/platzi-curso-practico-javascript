@@ -40,7 +40,7 @@
                 Escribe cuánto mide el lado 1 de tu triángulo:
             </label>
             <input id="InputTrianguloLado1" class="input" type="number" placeholder="Lado 1 del triángulo" required />
-            <label for="InputTrianguloLado1">
+            <label for="InputTrianguloLado2">
                 Escribe cuánto mide el lado 2 de tu triángulo:
             </label>
             <input id="InputTrianguloLado2" class="input" type="number" placeholder="Lado 2 del triángulo" required />
@@ -73,6 +73,20 @@
             </button>
             <button type="button" class="button" onclick="calcularAreaCirculo()">
                 Calcular el área
+            </button>
+        </form>
+        <form>
+            <h2>Calcula la altura de un triángulo isosceles</h2>
+            <label for="InputTrianguloIsoscelesLado">
+                Escribe cuánto mide los lados de tu triángulo:
+            </label>
+            <input id="InputTrianguloIsoscelesLado" class="input" type="number" placeholder="Lado del triángulo" required />
+            <label for="InputTrianguloIsoscelesBase">
+                Escribe cuánto mide la base de tu triángulo:
+            </label>
+            <input id="InputTrianguloIsoscelesBase" class="input" type="number" placeholder="Base del triángulo" required />
+            <button type="button" class="button" onclick="calcularAlturaTrianguloIsosceles()">
+                Calcular la altura
             </button>
         </form>
     </section>

@@ -38,8 +38,6 @@ console.group("Triángulo isósceles");
 
 const alturaTrianguloIsosceles = (lado, base) =>  Math.sqrt(Math.pow(lado, 2)-Math.pow((base/2), 2),2);
 
-console.log(alturaTrianguloIsosceles(10, 4));
-
 console.groupEnd();
 
 // Aquí interactuamos con el HTML
@@ -98,4 +96,13 @@ const calcularAreaCirculo = () => {
     const input = document.getElementById("InputRadio");
     const area = areaCirculo(input.value);
     alert(`El área del circulo es: ${area}`);
+}
+
+// funciones triangulo isósceles
+
+const calcularAlturaTrianguloIsosceles = () => {
+    const lado = parseInt(InputTrianguloIsoscelesLado.value);
+    const base = parseInt(InputTrianguloIsoscelesBase.value);
+    const altura = alturaTrianguloIsosceles(lado, base);
+    alert(`La altura del triángulo isósceles es: ${altura}`);
 }
